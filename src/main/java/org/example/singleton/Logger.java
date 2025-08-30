@@ -3,15 +3,6 @@ package org.example.singleton;
 public class Logger {
 
     String content;
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
     String type;
 
     private static Logger instance = null;
@@ -41,6 +32,15 @@ public class Logger {
             instance = new Logger();
         }
         return instance;
+    }
+
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
 }
